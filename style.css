@@ -1,0 +1,100 @@
+table,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: whitesmoke;
+    margin: 5%;
+}
+
+table {
+    width: 90%;
+}
+th {
+    padding: 2%;
+}
+
+td {
+    padding: 1%;
+    text-align: center;
+}
+img {
+    flex: 1;
+    border-radius: 5%;
+    margin: .5em;
+}
+
+.historicPlace-1,
+.historicPlace-2,
+.historicPlace-3 {
+    display: flex;
+}
+
+.sites {
+    margin: 0.5em;
+    background-color: #606c38;
+    border-radius: 1%;
+}
+
+body {
+    background-color:darkkhaki;
+    margin: 2.5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+}
+
+h1 {
+    flex: 4;
+    font-size: 6vw;
+    margin-left: 20%;
+    margin-top: 15%;
+    letter-spacing: 20%;
+    color: honeydew;
+}
+h2 {
+    text-align: center;
+    line-height: 50px;
+}
+p {
+  word-wrap: break-word;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+.Pic{
+    border-radius: 100%;
+}
+.namePicture {
+    background-image:url(tableMountain.jpg);
+    background-repeat: no-repeat;
+    
+    background-size: 100% 100%;
+}
+
+@media (min-width:960px) {
+    .historicPlaces {
+        display: flex;
+    }
+
+    .namePicture {
+        display: flex;
+    }
+
+    .whichCity {
+        display: flex;
+    }
+    
+}
+@media (max-width:959px){
+    .Pic {
+        margin-left: 45%;
+    }
+    .PicCity {
+        width: 90%;
+        margin: 5%;
+    }
+    .name {
+       text-align: center;
+    }
+}
