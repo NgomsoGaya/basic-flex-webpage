@@ -4,12 +4,14 @@ td {
     border: 2px solid black;
     border-collapse: collapse;
     background-color: whitesmoke;
-    margin: 5%;
+    margin: auto;
 }
 
 table {
     width: 90%;
+    margin: auto;
 }
+
 th {
     padding: 2%;
 }
@@ -18,28 +20,22 @@ td {
     padding: 1%;
     text-align: center;
 }
+
 img {
     flex: 1;
     border-radius: 5%;
     margin: .5em;
 }
 
-.historicPlace-1,
-.historicPlace-2,
-.historicPlace-3 {
-    display: flex;
-}
 
 .sites {
     margin: 0.5em;
-    background-color: #606c38;
     border-radius: 1%;
 }
 
 body {
-    background-color:darkkhaki;
-    margin: 2.5%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: darkkhaki;
+    margin: 1.5%;
     font-size: 1.5em;
 }
 
@@ -51,26 +47,49 @@ h1 {
     letter-spacing: 20%;
     color: honeydew;
 }
+
 h2 {
     text-align: center;
     line-height: 50px;
 }
+
 p {
-  word-wrap: break-word;
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
+    word-wrap: break-word;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
 
 }
-.Pic{
+
+.Pic {
     border-radius: 100%;
 }
+
 .namePicture {
-    background-image:url(tableMountain.jpg);
+    background-image: url(tableMountain.jpg);
     background-repeat: no-repeat;
-    
     background-size: 100% 100%;
 }
+
+.sixImage {
+    height: 50%;
+    float: right;
+}
+
+.castleImage {
+    height: 50%;
+    float: right;
+}
+
+.cityImage {
+    height: 50%;
+    float: right;
+}
+
+.historicPlaces {
+    margin: 0%;
+}
+
 
 @media (min-width:960px) {
     .historicPlaces {
@@ -84,17 +103,50 @@ p {
     .whichCity {
         display: flex;
     }
-    
 }
-@media (max-width:959px){
+
+@media (max-width:959px) {
     .Pic {
         margin-left: 45%;
     }
+
     .PicCity {
         width: 90%;
         margin: 5%;
     }
+
     .name {
-       text-align: center;
+        text-align: center;
+    }
+
+    .sixImage {
+        float: left;
+        margin-right: 8%;
+        clear: both;
+    }
+
+    .namePicture {
+        background-size: 100% 100%;
+    }
+
+    .six {
+        clear: right;
+    }
+
+    .castle {
+        clear: left;
+    }
+
+    .sixImage {
+        height: 20%;
+    }
+
+    .castleImage {
+        height: 20%;
+    }
+
+    .cityImage {
+        height: 20%;
+
     }
 }
